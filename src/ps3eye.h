@@ -28,12 +28,6 @@
 
 #include <stdint.h>
 
-#if defined(DEBUG)
-#define debug(...) fprintf(stdout, __VA_ARGS__)
-#else
-#define debug(...) 
-#endif
-
 
 namespace ps3eye {
 

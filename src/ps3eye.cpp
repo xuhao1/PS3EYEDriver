@@ -6,6 +6,14 @@
 #include <condition_variable>
 #include <atomic>
 
+
+#if defined(DEBUG)
+#define debug(...) fprintf(stdout, __VA_ARGS__)
+#else
+#define debug(...) 
+#endif
+
+
 #if defined WIN32 || defined _WIN32 || defined WINCE
 	#include <windows.h>
 	#include <algorithm>
